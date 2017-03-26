@@ -1,0 +1,240 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:bc107
+LIBS:MUSTAFA_YILDIZ_MULTIVIB_HOMEWORK-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MUSTAFA YILDIZ MULTIVIB HOMEWORK"
+Date "2017-03-13"
+Rev "1,0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP1_Small C1
+U 1 1 58C70A48
+P 4500 4000
+F 0 "C1" H 4510 4070 50  0000 L CNN
+F 1 "47uF" H 4510 3920 50  0000 L CNN
+F 2 "" H 4500 4000 50  0000 C CNN
+F 3 "" H 4500 4000 50  0000 C CNN
+	1    4500 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CP1_Small C2
+U 1 1 58C70B24
+P 5550 4000
+F 0 "C2" H 5560 4070 50  0000 L CNN
+F 1 "47uF" H 5560 3920 50  0000 L CNN
+F 2 "" H 5550 4000 50  0000 C CNN
+F 3 "" H 5550 4000 50  0000 C CNN
+	1    5550 4000
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 58C70B82
+P 6300 3000
+F 0 "R4" V 6380 3000 50  0000 C CNN
+F 1 "470R" V 6300 3000 50  0000 C CNN
+F 2 "" V 6230 3000 50  0000 C CNN
+F 3 "" H 6300 3000 50  0000 C CNN
+	1    6300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58C70C45
+P 5250 3000
+F 0 "R3" V 5330 3000 50  0000 C CNN
+F 1 "47K" V 5250 3000 50  0000 C CNN
+F 2 "" V 5180 3000 50  0000 C CNN
+F 3 "" H 5250 3000 50  0000 C CNN
+	1    5250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58C70C90
+P 5000 3000
+F 0 "R2" V 5080 3000 50  0000 C CNN
+F 1 "47K" V 5000 3000 50  0000 C CNN
+F 2 "" V 4930 3000 50  0000 C CNN
+F 3 "" H 5000 3000 50  0000 C CNN
+	1    5000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58C70CAC
+P 4000 3000
+F 0 "R1" V 4080 3000 50  0000 C CNN
+F 1 "470R" V 4000 3000 50  0000 C CNN
+F 2 "" V 3930 3000 50  0000 C CNN
+F 3 "" H 4000 3000 50  0000 C CNN
+	1    4000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 58C70CC9
+P 4000 2600
+F 0 "D1" H 4000 2700 50  0000 C CNN
+F 1 "LED" H 4000 2500 50  0000 C CNN
+F 2 "" H 4000 2600 50  0000 C CNN
+F 3 "" H 4000 2600 50  0000 C CNN
+	1    4000 2600
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 58C70F7C
+P 6300 2550
+F 0 "D2" H 6300 2650 50  0000 C CNN
+F 1 "LED" H 6300 2450 50  0000 C CNN
+F 2 "" H 6300 2550 50  0000 C CNN
+F 3 "" H 6300 2550 50  0000 C CNN
+	1    6300 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 2750 4000 2850
+Wire Wire Line
+	6300 2700 6300 2850
+Wire Wire Line
+	5650 4000 6850 4000
+Connection ~ 6300 4000
+Wire Wire Line
+	3450 4000 4400 4000
+Connection ~ 4000 4000
+Wire Wire Line
+	5000 3150 5000 4950
+Wire Wire Line
+	5000 4000 4600 4000
+Wire Wire Line
+	5250 3150 5250 4350
+Wire Wire Line
+	5250 4000 5450 4000
+Connection ~ 5000 4000
+Wire Wire Line
+	5250 4350 4750 4350
+Connection ~ 5250 4000
+Wire Wire Line
+	4000 2450 4000 2250
+Wire Wire Line
+	2950 2250 6300 2250
+Wire Wire Line
+	6300 2250 6300 2400
+Wire Wire Line
+	5250 2850 5250 2250
+Connection ~ 5250 2250
+Wire Wire Line
+	5000 2850 5000 2250
+Connection ~ 5000 2250
+$Comp
+L Battery 9V1
+U 1 1 58C71221
+P 2950 3850
+F 0 "9V1" H 3050 3950 50  0000 L CNN
+F 1 "Battery" H 3050 3850 50  0000 L CNN
+F 2 "" V 2950 3910 50  0000 C CNN
+F 3 "" V 2950 3910 50  0000 C CNN
+	1    2950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3650 2950 2250
+Connection ~ 4000 2250
+Wire Wire Line
+	2950 4050 2950 5400
+Wire Wire Line
+	2950 5400 6300 5400
+Connection ~ 4000 5400
+$Comp
+L bc107 U1
+U 1 1 58D84595
+P 3950 4800
+F 0 "U1" H 3750 5000 60  0000 C CNN
+F 1 "bc107" H 3950 4500 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-11-3" H 3950 4800 60  0001 C CNN
+F 3 "http://www.futurlec.com/Transistors/BC107.shtml" H 3950 4800 60  0001 C CNN
+	1    3950 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 5200 4050 5400
+Wire Wire Line
+	4050 5400 4000 5400
+Wire Wire Line
+	3850 4400 4750 4400
+Wire Wire Line
+	4750 4400 4750 4350
+Wire Wire Line
+	3850 5200 3450 5200
+Wire Wire Line
+	3450 5200 3450 4000
+Wire Wire Line
+	6300 4000 6300 3150
+$Comp
+L bc107 U2
+U 1 1 58D848FE
+P 6200 4750
+F 0 "U2" H 6000 4950 60  0000 C CNN
+F 1 "bc107" H 6200 4450 60  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-11-3" H 6200 4750 60  0001 C CNN
+F 3 "http://www.futurlec.com/Transistors/BC107.shtml" H 6200 4750 60  0001 C CNN
+	1    6200 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 5400 6300 5150
+Wire Wire Line
+	6100 5150 6850 5150
+Wire Wire Line
+	6850 5150 6850 4000
+Wire Wire Line
+	6100 4350 5750 4350
+Wire Wire Line
+	5750 4350 5750 4950
+Wire Wire Line
+	5750 4950 5000 4950
+Wire Wire Line
+	4050 3150 4000 3150
+Wire Wire Line
+	4000 3150 4000 4000
+$EndSCHEMATC
